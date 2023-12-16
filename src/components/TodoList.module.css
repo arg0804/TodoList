@@ -1,0 +1,77 @@
+*{
+  font-family: 'Kalnia', serif;
+  font-family: 'Lato', sans-serif;
+}
+
+.task {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.pending {
+  background-color: #ffe8cc;
+}
+
+.taskDetails {
+  flex: 1;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+}
+
+.deadline {
+  font-size: 14px;
+  color: #ff6347;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.removeButton {
+  background-color: #ff6347;
+}
+
+.removeButton:hover {
+  background-color: #d9534f;
+}
+
+h2 {
+  margin-top: 86px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .task {
+    flex-direction: column;
+  }
+
+  button {
+    margin-top: 8px;
+    margin-left: 0;
+  }
+}
